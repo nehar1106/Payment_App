@@ -1,0 +1,18 @@
+    <form action="/submit-form" method="POST">
+    <div class="container">
+        <div class="Sender Details">
+            <select name="browse" id="browse"> </select>
+            <button type="button">Browse</button>
+            <label for="fname">First name: </label>
+            <input type="text" id="sfname" name="fname">
+            <label for="lname">Last name: </label>
+            <input type="text" id="slname" name="lname">
+            <label for="fname">First name: </label>
+            <input type="text" id="rfname" name="fname">
+            <label for="lname">Last name: </label>
+            <input type="text" id="rlname" name="lname">            
+            <label for="tc"> I agree with the terms and conditions</label>
+            <button type="submit">Send</button>
+    	</div>
+    </div>
+    </form>

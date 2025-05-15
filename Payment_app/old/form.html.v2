@@ -1,0 +1,14 @@
+    <form action="/submit-form" method="POST">
+    <div class="container">
+        <div class="Sender Details">
+            <select name="browse" id="browse"> </select>
+            <button type="button">Browse</button>
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="lname">
+            <button type="button">Send</button>
+        </div>
+    </div>
+    </div>
+    </form>

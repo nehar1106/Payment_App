@@ -1,0 +1,59 @@
+
+    <form action="/submit-form" method="POST">
+    <link rel="stylesheet" href="css/style_1.css">
+    <div class="container">
+        <div class="Sender Details">
+            <select name="browse" id="browse"> </select>
+            <button type="button">Browse</button>
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="lname">
+            <img id="preview"/>
+			<input type="file" accept="image/*" onchange="previewImage(event)">
+			<script>
+			   const previewImage = e => {
+			      const preview = document.getElementById('preview');
+			      preview.src = URL.createObjectURL(e.target.files[0]);
+			      preview.onload = () => URL.revokeObjectURL(preview.src);
+			   };
+			</script>
+        </div>
+        <div class="Recipient Details">
+            <label for="rfname">First name: </label>
+            <input type="text" id="rfname" name="rfname">
+            <label for="rlname">Last name: </label>
+            <input type="text" id="rlname" name="rlname">
+            <label for="remail">Email: </label>
+            <input type="text" id="remail" name="remail">
+            <label for="phonenum">Phone Number: </label>
+            <input type="text" id="phonenum" name="phonenum">
+            <label for="notify">Notify Recipient: </label>
+            <input type="checkbox" id="emailnotify" name="emailnotify" value="emailnotify">
+            <label for="emailnotify">email </label>
+            <input type="checkbox" id="smsnotify" name="smsnotify" value="smsnotify">
+            <label for="smsnotify">SMS</label>
+            <input type="checkbox" id="nonotify" name="nonotify" value="NoNotify">   
+            <label for="nonotify"> Do Not Notify</label>
+            <div class="Message">
+            <label for="msg">Message </label>
+            <input type="text" id="msg" name="msg">
+        </div>
+    </div>
+    <div class="Payment Details">
+        <label for="cnum">Card Number: </label>
+            <input type="text" id="cnum" name="cnum">
+            <label for="exp">Expiration: </label>
+            <input type="text" id="exp" name="exp">
+            <label for="ccv">CCV: </label>
+            <input type="text" id="ccv" name="ccv">
+            <label for="amt">Amount: </label>
+            <input type="text" id="amt" name="amt">
+            <select name="cardtype" id="cardtype"> </select>
+            <input type="checkbox" id="tc" name="tc" value="Terms&Conditions">
+            <label for="tc"> I agree with the terms and conditions</label>
+            <button type="submit">Send</button>
+    </div>
+    </div>
+    </form>
+  

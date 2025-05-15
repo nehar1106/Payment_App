@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+
+form {
+ 
+  display: grid;
+  grid-template-columns: repeat(1.5, 1fr);
+  grid-gap: 20px;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input[type=text], form input[type=number], form input[type=email], form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+input[type=text] {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #eee;
+  font-size: 16px;
+  width: 100%;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+}
+
+
+input[type=text]:hover,
+ input[type=text]:focus {
+   outline: none;
+   border-bottom: 2px solid #333;
+ }
+ .col-6 {
+  grid-column: span 1;
+}
+.SenderDetails{
+  outline: none;
+  border-bottom: 3px solid #333;
+  
+}
+.RecipientDetails{
+  outline: none;
+  border-bottom: 3px solid #333;
+  
+}
+ input[type=submit] {
+   grid-column: 1 / -1;
+   padding: 10px;
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: 600;
+   transition: all 0.3s ease-in-out;
+ }

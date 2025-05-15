@@ -1,0 +1,53 @@
+ <html>
+  <head>
+    <title>Email Sender</title>
+  </head>
+  <body>
+    <form action="/submit-form" method="POST">
+    <div class="container">
+        <div class="Sender Details">
+            <select name="browse" id="browse"> </select>
+            <button type="button">Browse</button>
+            <label for="fname">First name: </label>
+            <input type="text" id="s_fname" name="fname">
+            <label for="lname">Last name: </label>
+            <input type="text" id="s_lname" name="lname">
+            
+        </div>
+        <div class="Recipient Details">
+            <label for="fname">First name: </label>
+            <input type="text" id="r_fname" name="fname">
+            <label for="lname">Last name: </label>
+            <input type="text" id="r_lname" name="lname">
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email">
+            <label for="phonenum">Phone Number: </label>
+            <input type="text" id="phonenum" name="phonenum">
+            <label for="notify">Notify Recipient: </label>
+            <input type="checkbox" id="emailnotify" name="emailnotify" value="EmailNotify">
+            <label for="emailnotify">email </label>
+            <input type="checkbox" id="sms" name="sms" value="SMS">
+            <label for="sms">SMS</label>
+            <input type="checkbox" id="nonotify" name="nonotify" value="NoNotify">   
+            <label for="nonotify"> Do Not Notify</label>
+            <div class="textbox"><textarea id="scrollbox"></textarea>
+        </div>
+    </div>
+    <div class="Payment Details">
+        <label for="cnum">Card Number: </label>
+            <input type="text" id="cnum" name="cnum">
+            <label for="exp">Expiration: </label>
+            <input type="text" id="exp" name="exp">
+            <label for="ccv">CCV: </label>
+            <input type="text" id="ccv" name="ccv">
+            <label for="amt">Amount: </label>
+            <input type="text" id="amt" name="amt">
+            <select name="cardtype" id="cardtype"> </select>
+            <input type="checkbox" id="tc" name="tc" value="Terms&Conditions">
+            <label for="tc"> I agree with the terms and conditions</label>
+            <button type="submit">Send</button>
+    </div>
+    </div>
+    </form>
+  </body>
+</html>
