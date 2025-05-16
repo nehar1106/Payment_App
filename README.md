@@ -30,3 +30,8 @@ This is a simple web application simulating peer-to-peer payments between users.
 ```bash
 docker-compose build paymentapp
 docker-compose up
+
+## Usage
+http://localhost/paymentapp/
+
+
