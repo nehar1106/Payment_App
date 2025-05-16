@@ -31,7 +31,8 @@ This is a simple web application simulating peer-to-peer payments between users.
 docker-compose build paymentapp
 docker-compose up
 
-### Usage:
+
+Usage:
 http://localhost/paymentapp/
 
 
